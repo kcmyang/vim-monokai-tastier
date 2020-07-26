@@ -115,12 +115,12 @@ command! What echo synIDattr(synID(line('.'), col('.'), 1), 'name')
 
 | Colour name | Colour Code | Colour                                                       |
 | ----------- | ----------- | ------------------------------------------------------------ |
-| Yellow      | `#ffff87`   | ![#ffff87](https://placehold.it/100x40/ffff87/111111?text=+) |
-| Purple      | `#af87ff`   | ![#af87ff](https://placehold.it/100x40/af87ff/000000?text=+) |
-| Light Green | `#A4E400`   | ![#A4E400](https://placehold.it/100x40/A4E400/000000?text=+) |
-| Light Blue  | `#62D8F1`   | ![#62D8F1](https://placehold.it/100x40/62D8F1/000000?text=+) |
-| Magenta     | `#FC1A70`   | ![#FC1A70](https://placehold.it/100x40/FC1A70/000000?text=+) |
-| Orange      | `#FF9700`   | ![#FF9700](https://placehold.it/100x40/FF9700/000000?text=+) |
+| Red         | `#ff6188`   | ![#ff6188](https://placehold.it/100x40/ff6188/000000?text=+) |
+| Orange      | `#ff9867`   | ![#ff9867](https://placehold.it/100x40/ff9867/000000?text=+) |
+| Yellow      | `#ffd866`   | ![#ffd866](https://placehold.it/100x40/ffd866/000000?text=+) |
+| Green       | `#a9dc76`   | ![#a9dc76](https://placehold.it/100x40/a9dc76/000000?text=+) |
+| Cyan        | `#78dce8`   | ![#78dce8](https://placehold.it/100x40/78dce8/000000?text=+) |
+| Magenta     | `#ab9df2`   | ![#ab9df2](https://placehold.it/100x40/ab9df2/000000?text=+) |
 
 ## :building_construction: Support
 If you like `vim-monokai-tasty` or find this plugin useful, you can support me by donating bitcoin to the following address.

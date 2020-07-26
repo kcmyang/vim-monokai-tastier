@@ -1,10 +1,10 @@
 " Color palette
-let s:yellow = { "cterm": 221, "gui": "#ffd866" }
-let s:purple = { "cterm": 147, "gui": "#ab9df2" }
-let s:light_green = { "cterm": 150, "gui": "#a9dc76" }
-let s:light_blue = { "cterm": 116, "gui": "#78dce8" }
-let s:magenta = { "cterm": 204, "gui": "#ff6188" }
+let s:red = { "cterm": 204, "gui": "#ff6188" }
 let s:orange = { "cterm": 209, "gui": "#ff9867" }
+let s:yellow = { "cterm": 221, "gui": "#ffd866" }
+let s:green = { "cterm": 150, "gui": "#a9dc76" }
+let s:cyan = { "cterm": 116, "gui": "#78dce8" }
+let s:magenta = { "cterm": 147, "gui": "#ab9df2" }
 
 let s:white = { "cterm": 231, "gui": "fcfcfa" }
 let s:light_grey = { "cterm": 250, "gui": "#bcbcbc" }
@@ -21,12 +21,12 @@ let s:palette = {}
 
 " Normal mode
 let s:palette.normal = {
-      \   'airline_a': s:add(s:charcoal, s:light_blue, 'bold'),
+      \   'airline_a': s:add(s:charcoal, s:cyan, 'bold'),
       \   'airline_b': s:add(s:light_grey, s:dark_grey, 'none'),
-      \   'airline_c': s:add(s:light_blue, s:darker_grey, 'none'),
-      \   'airline_x': s:add(s:light_blue, s:light_charcoal, 'none'),
+      \   'airline_c': s:add(s:cyan, s:darker_grey, 'none'),
+      \   'airline_x': s:add(s:cyan, s:light_charcoal, 'none'),
       \   'airline_y': s:add(s:light_grey, s:darker_grey, 'none'),
-      \   'airline_z': s:add(s:charcoal, s:light_blue, 'bold'),
+      \   'airline_z': s:add(s:charcoal, s:cyan, 'bold'),
       \ }
 let s:palette.normal_modified = {
       \   'airline_c': s:add(s:white, s:darker_grey, 'none'),
@@ -35,12 +35,12 @@ let s:palette.normal_modified = {
 
 " Insert mode
 let s:palette.insert = {
-      \   'airline_a': s:add(s:charcoal, s:magenta, 'bold'),
+      \   'airline_a': s:add(s:charcoal, s:red, 'bold'),
       \   'airline_b': s:add(s:light_grey, s:dark_grey, 'none'),
-      \   'airline_c': s:add(s:magenta, s:darker_grey, 'none'),
-      \   'airline_x': s:add(s:magenta, s:light_charcoal, 'none'),
+      \   'airline_c': s:add(s:red, s:darker_grey, 'none'),
+      \   'airline_x': s:add(s:red, s:light_charcoal, 'none'),
       \   'airline_y': s:add(s:light_grey, s:darker_grey, 'none'),
-      \   'airline_z': s:add(s:charcoal, s:magenta, 'bold'),
+      \   'airline_z': s:add(s:charcoal, s:red, 'bold'),
       \ }
 let s:palette.insert_modified = {
       \   'airline_c': s:add(s:white, s:darker_grey, 'none'),
@@ -48,12 +48,12 @@ let s:palette.insert_modified = {
 
 " Command
 let s:palette.commandline = {
-      \   'airline_a': s:add(s:charcoal, s:light_green, 'bold'),
+      \   'airline_a': s:add(s:charcoal, s:green, 'bold'),
       \   'airline_b': s:add(s:light_grey, s:dark_grey, 'none'),
-      \   'airline_c': s:add(s:light_green, s:darker_grey, 'none'),
-      \   'airline_x': s:add(s:light_green, s:light_charcoal, 'none'),
+      \   'airline_c': s:add(s:green, s:darker_grey, 'none'),
+      \   'airline_x': s:add(s:green, s:light_charcoal, 'none'),
       \   'airline_y': s:add(s:light_grey, s:darker_grey, 'none'),
-      \   'airline_z': s:add(s:charcoal, s:light_green, 'bold'),
+      \   'airline_z': s:add(s:charcoal, s:green, 'bold'),
       \ }
 
 " Replace mode
@@ -71,12 +71,12 @@ let s:palette.replace_modified = {
 
 " Visual mode
 let s:palette.visual = {
-      \   'airline_a': s:add(s:charcoal, s:purple, 'bold'),
+      \   'airline_a': s:add(s:charcoal, s:magenta, 'bold'),
       \   'airline_b': s:add(s:light_grey, s:dark_grey, 'none'),
-      \   'airline_c': s:add(s:purple, s:darker_grey, 'none'),
-      \   'airline_x': s:add(s:purple, s:light_charcoal, 'none'),
+      \   'airline_c': s:add(s:magenta, s:darker_grey, 'none'),
+      \   'airline_x': s:add(s:magenta, s:light_charcoal, 'none'),
       \   'airline_y': s:add(s:light_grey, s:darker_grey, 'none'),
-      \   'airline_z': s:add(s:charcoal, s:purple, 'bold'),
+      \   'airline_z': s:add(s:charcoal, s:magenta, 'bold'),
       \ }
 let s:palette.visual_modified = {
       \   'airline_c': s:add(s:white, s:darker_grey, 'none'),
@@ -94,7 +94,7 @@ if get(g:, 'loaded_ctrlp', 0)
   let s:palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
         \ s:add(s:yellow, s:dark_grey, 'none'),
         \ s:add(s:yellow, s:darker_grey, 'none'),
-        \ s:add(s:charcoal, s:light_blue, 'bold') )
+        \ s:add(s:charcoal, s:cyan, 'bold') )
 endif
 
 let g:airline#themes#monokai_tasty#palette = s:palette
