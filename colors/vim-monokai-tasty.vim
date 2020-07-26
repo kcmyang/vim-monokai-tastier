@@ -1,6 +1,6 @@
 " Vim color file
 "
-" Author: Patrick Stockwell <mail@deciphr.net>
+" Author: Marco Yang <marcoyang123@gmail.com>
 
 hi clear
 if exists("syntax_on")
@@ -20,12 +20,12 @@ else
   let s:italic = { "cterm": "NONE", "gui": "NONE" }
 endif
 
-let s:yellow = { "cterm": 228, "gui": "#ffff87" }
-let s:purple = { "cterm": 141, "gui": "#af87ff" }
-let s:light_green = { "cterm": 148, "gui": "#A4E400" }
-let s:light_blue = { "cterm": 81, "gui": "#62D8F1" }
-let s:magenta = { "cterm": 197, "gui": "#FC1A70" }
-let s:orange = { "cterm": 208, "gui": "#FF9700" }
+let s:yellow = { "cterm": 221, "gui": "#ffd866" }
+let s:purple = { "cterm": 147, "gui": "#ab9df2" }
+let s:light_green = { "cterm": 150, "gui": "#a9dc76" }
+let s:light_blue = { "cterm": 116, "gui": "#78dce8" }
+let s:magenta = { "cterm": 204, "gui": "#ff6188" }
+let s:orange = { "cterm": 209, "gui": "#ff9867" }
 
 " Search colours. Specifically not in the monokai palette so that they will
 " stand out.
@@ -33,13 +33,13 @@ let s:black = { "cterm": 0, "gui": "#000000" }
 let s:bright_yellow = { "cterm": 11, "gui": "yellow" }
 
 " Monochrome in order light -> dark
-let s:white = { "cterm": 231, "gui": "#ffffff" }
+let s:white = { "cterm": 231, "gui": "fcfcfa" }
 let s:light_grey = { "cterm": 250, "gui": "#bcbcbc" }
 let s:grey = { "cterm": 245, "gui": "#8a8a8a" }
 let s:dark_grey = { "cterm": 59, "gui": "#5f5f5f" }
 let s:darker_grey = { "cterm": 238, "gui": "#444444" }
 let s:light_charcoal = { "cterm": 238, "gui": "#2b2b2b" }
-let s:charcoal = { "cterm": 235, "gui": "#262626" }
+let s:charcoal = { "cterm": 235, "gui": "#222222" }
 
 " Git diff colours.
 let s:danger = { "cterm": 197, "gui": "#ff005f" }
